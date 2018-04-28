@@ -5,3 +5,4 @@ Solutions to problems posted on [Project Euler](https://projecteuler.net) writte
 001 ✓
 002 ✓
 003 ✓
+004 ✓
