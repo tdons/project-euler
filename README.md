@@ -8,3 +8,4 @@ Solutions to problems posted on [Project Euler](https://projecteuler.net) writte
 004 ✓
 005 ✓
 006 ✓
+007 ✓
