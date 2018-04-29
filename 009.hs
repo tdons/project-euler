@@ -1,5 +1,5 @@
 #!/usr/bin/env runhaskell
-{-
+{- https://projecteuler.net/problem=9
 Problem 9
 Special Pythagorean triplet
 

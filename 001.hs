@@ -1,5 +1,5 @@
 #!/usr/bin/env runhaskell
-{-
+{- https://projecteuler.net/problem=1
 Problem 1
 Multiples of 3 and 5
 

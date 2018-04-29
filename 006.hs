@@ -1,5 +1,5 @@
 #!/usr/bin/env runhaskell
-{-
+{- https://projecteuler.net/problem=6
 Problem 6
 Sum square difference
 

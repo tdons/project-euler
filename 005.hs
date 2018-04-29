@@ -1,5 +1,5 @@
 #!/usr/bin/env runhaskell
-{-
+{- https://projecteuler.net/problem=5
 Problem 5
 Smallest multiple
 

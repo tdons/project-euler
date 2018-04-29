@@ -1,5 +1,5 @@
 #!/usr/bin/env runhaskell
-{-
+{- https://projecteuler.net/problem=3
 Problem 3
 Largest prime factor
 
