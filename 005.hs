@@ -1,3 +1,4 @@
+#!/usr/bin/env runhaskell
 {-
 Problem 5
 Smallest multiple
@@ -28,4 +29,4 @@ What is the smallest positive number that is evenly divisible by all of the numb
 -- To summarize: 2 ^ 4 * 3 ^ 2 * 5 * 7 * 11 * 13 * 17 * 19
 
 main :: IO ()
-main = putStrLn . show $ foldl1 (*) [2,2,2,2,3,3,5,7,11,13,17,19]
+main = print . product $ [2,2,2,2,3,3,5,7,11,13,17,19]

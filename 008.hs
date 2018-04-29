@@ -1,3 +1,4 @@
+#!/usr/bin/env runhaskell
 {-
 Problem 8
 Largest product in a series
@@ -54,4 +55,4 @@ digits = map digitToInt $ "73167176531330624919225119674426574742355349194934\
 
 
 main :: IO ()
-main = putStrLn . show $ foldl1 max $  map (\x -> product . take 13 . drop x $ digits) [1..987]
+main = print . maximum . map (\x -> product . take 13 . drop x $ digits) $ [1..987]

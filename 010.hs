@@ -1,3 +1,4 @@
+#!/usr/bin/env runhaskell
 {-
 Problem 10
 Summation of primes
@@ -16,4 +17,4 @@ primes = 2 : 3 : 5 : 7 : filter isPrime [8..]
 
 
 main :: IO ()
-main = putStrLn . show $ sum . takeWhile (< 2000000) $ primes
+main = print . sum . takeWhile (< 2000000) $ primes

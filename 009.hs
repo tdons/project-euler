@@ -1,3 +1,4 @@
+#!/usr/bin/env runhaskell
 {-
 Problem 9
 Special Pythagorean triplet
@@ -11,5 +12,13 @@ There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 Find the product abc.
 -}
 
+isTriplet :: (Integral a) => (a, a, a) -> Bool
+isTriplet (a, b, c) = a * a + b * b == c * c
+
+triplets :: (Integral a) => [(a, a, a)]
+triplets = [(a, b, t - a - b) | a <- [1..t], b <- [1..t], a > b, t - a - b > 0]
+         where t = 1000
+
 main :: IO ()
-main = putStrLn . show $ head [a * b * c | (a, b, c) <- [(a, b, 1000 - a - b) | a <- [1..1000], b <- [1..1000], a < b, a + b < 1000], a * a + b * b == c * c]
+main = print (a * b * c)
+     where (a, b, c) = head . filter isTriplet $ triplets

@@ -1,3 +1,4 @@
+#!/usr/bin/env runhaskell
 {-
 Problem 1
 Multiples of 3 and 5
@@ -7,4 +8,5 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 -}
 
-main = putStrLn . show $ sum [x | x <- [1..999], x `mod` 3 == 0 || x `mod` 5 == 0]
+main :: IO ()
+main = print . sum $ [x | x <- [1..999], x `mod` 3 == 0 || x `mod` 5 == 0]

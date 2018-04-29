@@ -1,3 +1,4 @@
+#!/usr/bin/env runhaskell
 {-
 Problem 7
 10001st prime
@@ -16,4 +17,4 @@ primes :: [Integer]
 primes = 2 : 3 : 5 : 7 : filter isPrime [8..]
 
 main :: IO ()
-main = putStrLn . show $ primes !! 10000
+main = print $ primes !! 10000

@@ -1,3 +1,4 @@
+#!/usr/bin/env runhaskell
 {-
 Problem 3
 Largest prime factor
@@ -25,4 +26,4 @@ primes :: [Integer]
 primes = divisors \\ nonPrimeDivisors
 
 main :: IO ()
-main = putStrLn . show $ foldl1 max primes
+main = print . maximum $ primes

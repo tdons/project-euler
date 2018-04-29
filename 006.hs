@@ -1,3 +1,4 @@
+#!/usr/bin/env runhaskell
 {-
 Problem 6
 Sum square difference
@@ -13,11 +14,8 @@ Hence the difference between the sum of the squares of the first ten natural num
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 -}
 
-sumOfSquares :: Integer
-sumOfSquares = sum $ map (^2) [1..100]
-
-squareOfSums :: Integer
-squareOfSums = (^2) $ sum [1..100]
-
 main :: IO ()
-main = putStrLn . show $ squareOfSums - sumOfSquares
+main = print $ squareOfSums - sumOfSquares
+       where xs = [1..100]
+             sumOfSquares = sum $ zipWith (*) xs xs
+             squareOfSums = sum xs ^ 2
