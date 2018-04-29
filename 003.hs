@@ -16,11 +16,11 @@ m = ceiling (sqrt 600851475143)
 
 -- Find all divisors of the number.
 divisors :: [Integer]
-divisors = [x | x <- [2..m], 600851475143 `mod` x == 0]
+divisors = [x | x <- [2..m], 600851475143 `rem` x == 0]
 
 -- Filter out non-prime numbers
 nonPrimeDivisors :: [Integer]
-nonPrimeDivisors = [y | x <- divisors, y <- divisors, x < y,  y `mod` x == 0]
+nonPrimeDivisors = [y | x <- divisors, y <- divisors, x < y,  y `rem` x == 0]
 
 primes :: [Integer]
 primes = divisors \\ nonPrimeDivisors

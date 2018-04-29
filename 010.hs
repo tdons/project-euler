@@ -9,7 +9,7 @@ Find the sum of all the primes below two million.
 -}
 
 -- Borrowed this from Problem 7
-isPrime x = all (\p -> x `mod` p /= 0) $ takeWhile (<= x') primes
+isPrime x = all (\p -> x `rem` p /= 0) $ takeWhile (<= x') primes
             where x' :: Integer 
                   x' = ceiling $ sqrt (fromInteger x)
 primes :: [Integer]

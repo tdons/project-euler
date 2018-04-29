@@ -9,7 +9,7 @@ What is the 10 001st prime number?
 -}
 
 isPrime :: Integer -> Bool
-isPrime x = all (\p -> x `mod` p /= 0) $ takeWhile (<= x') primes
+isPrime x = all (\p -> x `rem` p /= 0) $ takeWhile (<= x') primes
             where x' :: Integer 
                   x' = ceiling $ sqrt (fromInteger x)
 
