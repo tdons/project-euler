@@ -13,6 +13,6 @@ Solutions to problems posted on [Project Euler](https://projecteuler.net) writte
 | 005 ✓ | 015 ✓ |
 | 006 ✓ | 016 ✓ |
 | 007 ✓ | 017 ✓ |
-| 008 ✓ | 018   |
+| 008 ✓ | 018 ✓ |
 | 009 ✓ | 019   |
 | 010 ✓ | 020   |
