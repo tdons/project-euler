@@ -14,5 +14,5 @@ Solutions to problems posted on [Project Euler](https://projecteuler.net) writte
 | 006 ✓ | 016 ✓ |
 | 007 ✓ | 017 ✓ |
 | 008 ✓ | 018 ✓ |
-| 009 ✓ | 019   |
+| 009 ✓ | 019 ✓ |
 | 010 ✓ | 020   |
