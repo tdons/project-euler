@@ -8,7 +8,7 @@ The prime factors of 13195 are 5, 7, 13 and 29.
 What is the largest prime factor of the number 600851475143 ?
 -}
 
-import Data.List ((\\))
+import qualified Data.List as DL ((\\))
 
 -- Any prime factor will be <= this number
 m :: Integer
@@ -23,7 +23,7 @@ nonPrimeDivisors :: [Integer]
 nonPrimeDivisors = [y | x <- divisors, y <- divisors, x < y,  y `rem` x == 0]
 
 primes :: [Integer]
-primes = divisors \\ nonPrimeDivisors
+primes = divisors DL.\\ nonPrimeDivisors
 
 main :: IO ()
 main = print . maximum $ primes
