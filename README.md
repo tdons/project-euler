@@ -8,7 +8,7 @@ Solutions to problems posted on [Project Euler](https://projecteuler.net) writte
 | ----- | ----- |
 | 001 ✓ | 011 ✓ |
 | 002 ✓ | 012 ✓ |
-| 003 ✓ | 013   |
+| 003 ✓ | 013 ✓ |
 | 004 ✓ | 014   |
 | 005 ✓ | 015   |
 | 006 ✓ | 016   |
