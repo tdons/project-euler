@@ -10,7 +10,7 @@ Solutions to problems posted on [Project Euler](https://projecteuler.net) writte
 | 002 ✓ | 012 ✓ |
 | 003 ✓ | 013 ✓ |
 | 004 ✓ | 014 ✓ |
-| 005 ✓ | 015   |
+| 005 ✓ | 015 ✓ |
 | 006 ✓ | 016   |
 | 007 ✓ | 017   |
 | 008 ✓ | 018   |
