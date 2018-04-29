@@ -6,7 +6,7 @@ Solutions to problems posted on [Project Euler](https://projecteuler.net) writte
 
 |       |       |       |
 | ----- | ----- | ----- |
-| 001 ✓ | 011 ✓ | 021   |
+| 001 ✓ | 011 ✓ | 021 ✓ |
 | 002 ✓ | 012 ✓ | 022   |
 | 003 ✓ | 013 ✓ | 023   |
 | 004 ✓ | 014 ✓ | 024   |
