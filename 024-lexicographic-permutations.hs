@@ -15,11 +15,11 @@ fac n = product [1..n]
 
 nthPermutationOf :: (Eq a) => Int -> [a] -> [a]
 nthPermutationOf _ [] = []
-nthPermutationOf ix d = digit : nthPermutationOf (ix - pos * f) d'
-   where f = fac (length d - 1)
-         pos = ix `quot` f
-         digit = d !! pos
-         d' = filter (/= digit) d
+nthPermutationOf permutation xss = digit : nthPermutationOf (permutation - index * f) (filter (/= digit) xss)
+   where f = fac $ length xss - 1
+         index = permutation `quot` f
+         digit = xss !! index
 
 main :: IO ()
-main = print . concat . map show $ nthPermutationOf (10 ^ 6 - 1) [0..9]
+main = print answer 
+   where answer = read . concat . map show $ nthPermutationOf (10 ^ 6 - 1) [0..9] :: Integer
