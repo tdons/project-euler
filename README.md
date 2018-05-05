@@ -7,7 +7,7 @@ Solutions to problems posted on [Project Euler](https://projecteuler.net) writte
 |       |       |       |       |       |       |       |       |       |       |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 001 ✓ | 011 ✓ | 021 ✓ | 031 ✓ | 041   | 051   | 061   | 071   | 081   | 091   |
-| 002 ✓ | 012 ✓ | 022 ✓ | 032   | 042   | 052   | 062   | 072   | 082   | 092 ✓ |
+| 002 ✓ | 012 ✓ | 022 ✓ | 032 ✓ | 042   | 052   | 062   | 072   | 082   | 092 ✓ |
 | 003 ✓ | 013 ✓ | 023 ✓ | 033   | 043   | 053   | 063   | 073   | 083   | 093   |
 | 004 ✓ | 014 ✓ | 024 ✓ | 034   | 044   | 054   | 064   | 074   | 084   | 094   |
 | 005 ✓ | 015 ✓ | 025 ✓ | 035   | 045 ✓ | 055   | 065   | 075   | 085   | 095   |
@@ -20,7 +20,7 @@ Solutions to problems posted on [Project Euler](https://projecteuler.net) writte
 
 ## Legend
 
-Every problem admits a solution that requires less than a minute of computing time according to the website.
+Every problem admits a solution that requires less than a minute of computing time according to the [Project Euler faq](https://projecteuler.net/about).
 Completed puzzles are marked with either one of the below icons so that I can keep track of which puzzles still need work.
 
 - ✓  program produces the correct answer, it might take (much) longer than a minute to run with `$ runhaskell` but will be considerably faster than a minute when compiled with `$ ghc -O3`
