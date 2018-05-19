@@ -47,4 +47,7 @@ findIncreasingSequence (x:xs) = case (/= []) d'' of
 main :: IO ()
 main = print answer
   where answer :: Int
-        answer = read . concat . map show . head . filter (/= [1487, 4817, 8147]) . filter (/= []) . map findIncreasingSequence . filter (/= []) . concat . map DL.tails $ candidates
+        -- Find the answer in the format project Euler asks
+        answer = read . concat . map show . head . filter (/= [1487, 4817, 8147]) $ answers
+        -- Find all sequences with the requested property
+        answers = filter (/= []) . map findIncreasingSequence . filter (/= []) . concat . map DL.tails $ candidates
