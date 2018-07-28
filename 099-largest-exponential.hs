@@ -15,9 +15,15 @@ NOTE: The first two lines in the file represent the numbers in the example given
 import qualified Data.List as DL (maximumBy)
 import qualified Data.Ord as DO (comparing)
 
+compareBaseExponentPair :: (Float, Float) -> Float
+compareBaseExponentPair (a, b) = log a * b
+
+-- Beware: index starts at 1.
+findMaxIndexBy :: (Ord b) => (a -> b) -> [a] -> Int
+findMaxIndexBy fn xs = fst . DL.maximumBy (DO.comparing (fn . snd)) $ zipWith (,) [1..] xs
+
 main :: IO ()
 main = do pairs <- readFile "resources/p099_base_exp.txt"
-          print . fst . DL.maximumBy (DO.comparing snd) $ zipWith (,) [1..] (computeExponents pairs)
-          where computeExponents s = map (\(a, b) -> a ^ b) . map makePair . lines $ s
-                makePair :: [Char] -> (Integer, Integer)
+          print $ findMaxIndexBy compareBaseExponentPair (map makePair $ lines pairs)
+          where makePair :: [Char] -> (Float, Float)
                 makePair s = read $ "(" ++ s ++ ")"
