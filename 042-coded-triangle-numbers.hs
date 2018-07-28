@@ -26,5 +26,5 @@ isTriangleWord :: [Char] -> Bool
 isTriangleWord w = isTriangle . sum . map letterValue $ w
 
 main :: IO ()
-main = do names <- readFile "resources/042/p042_words.txt"
+main = do names <- readFile "resources/p042_words.txt"
           print . length . filter isTriangleWord . read $ "[" ++ names ++ "]"

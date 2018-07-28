@@ -24,7 +24,7 @@ digits :: String -> DS.Set Int
 digits s = DS.fromList . map DC.digitToInt $ filter (/= '\n') s
 
 main :: IO ()
-main = do attempts <- readFile "resources/079/p079_keylog.txt"
+main = do attempts <- readFile "resources/p079_keylog.txt"
           print
             . concatDigits
             -- Filtering out the digits that aren't in the passphrase is kind of cheeky/ugly.

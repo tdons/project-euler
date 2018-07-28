@@ -22,5 +22,5 @@ scoreNames names = sum . map (\(a, b) -> a * score b) $ sorted
      where sorted = zipWith ((,)) [1..] (DL.sort names)
 
 main :: IO ()
-main = do names <- readFile "resources/022/p022_names.txt"
+main = do names <- readFile "resources/p022_names.txt"
           print . scoreNames . read $ "[" ++ names ++ "]"
