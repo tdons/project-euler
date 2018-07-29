@@ -15,15 +15,18 @@ NOTE: The first two lines in the file represent the numbers in the example given
 import qualified Data.List as DL (maximumBy)
 import qualified Data.Ord as DO (comparing)
 
-compareBaseExponentPair :: (Float, Float) -> Float
-compareBaseExponentPair (a, b) = log a * b
+-- Take the logarithm of both sides and then apply the power rule (log_b(q^p) = p log_b(q)):
+--   a^b < c^d
+-- = log(a^b) < log(c^d)
+-- = b * log(a) < d log(c)
 
 -- Beware: index starts at 1.
 findMaxIndexBy :: (Ord b) => (a -> b) -> [a] -> Int
-findMaxIndexBy fn xs = fst . DL.maximumBy (DO.comparing (fn . snd)) $ zipWith (,) [1..] xs
+findMaxIndexBy fn xs = fst . DL.maximumBy cmp $ zipWith (,) [1..] xs
+  where cmp = DO.comparing $ fn . snd
 
 main :: IO ()
-main = do pairs <- readFile "resources/p099_base_exp.txt"
-          print $ findMaxIndexBy compareBaseExponentPair (map makePair $ lines pairs)
-          where makePair :: [Char] -> (Float, Float)
+main = do fileContents <- readFile "resources/p099_base_exp.txt"
+          print . findMaxIndexBy (\(base, exponent) -> log base * exponent) . map makePair . lines $ fileContents
+          where makePair :: [Char] -> (Double, Double)
                 makePair s = read $ "(" ++ s ++ ")"
