@@ -17,7 +17,7 @@ Every problem admits a solution that requires less than a minute of computing ti
 | [007](./007-10001st-prime.hs) ✓ | [017](./017-number-letter-counts.hs) ✓ | [027](./027-quadratic-primes.hs) ✓ | [037](./037-truncatable-primes.hs) ✓ | [047](./047-distinct-prime-factors.hs) ✓ | 057   | 067   | 077   | [087](./087-prime-power-triples.hs) ✓ | [097](./097-large-non-mersenne-prime.hs) ✓ |
 | [008](./008-largest-product-in-a-series.hs) ✓ | [018](./018-maximum-path-sum-i.hs) ✓ | [028](./028-number-spiral-diagonals.hs) ✓ | [038](./038-pandigital-multiples.hs) ✓ | [048](./048-self-powers.hs) ✓ | 058   | 068   | 078   | 088   | 098   |
 | [009](./009-special-pythagorean-triplet.hs) ✓ | [019](./019-counting-sundays.hs) ✓ | [029](./029-distinct-powers.hs) ✓ | [039](./039-integer-right-triangles.hs) ✓ | [049](./049-prime-permutations.hs) ✓ | 059   | 069   | [079](./079-passcode-derivation.hs) ✓ | 089   | [099](./099-largest-exponential.hs) ✓ |
-| [010](./010-summation-of-primes.hs) ✓ | [020](./020-factorial-digit-sum.hs) ✓ | [030](./030-digit-fifth-powers.hs) ✓ | [040](./040-champernownes-constant.hs) ✓ | [050](./050-consecutive-prime-sum.hs) ✓ | 060   | 070   | 080   | 090   | 100   |
+| [010](./010-summation-of-primes.hs) ✓ | [020](./020-factorial-digit-sum.hs) ✓ | [030](./030-digit-fifth-powers.hs) ✓ | [040](./040-champernownes-constant.hs) ✓ | [050](./050-consecutive-prime-sum.hs) ✓ | 060   | 070   | 080   | 090   | [100](./100-arranged-probability.lhs) ✓ |
 
 
 ***
