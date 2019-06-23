@@ -8,7 +8,7 @@ Every problem admits a solution that requires less than a minute of computing ti
 
 |       |       |       |       |       |       |       |       |       |       |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| [001](./001-multiples-of-3-and-5.hs) ✓ | [011](./011-largest-product-in-a-grid.hs) ✓ | [021](./021-amicable-numbers.hs) ✓ | [031](./031-coin-sums.hs) ✓ | [041](./041-pandigital-prime.hs) ✓ | 051   | 061   | [071](./071-ordered-fractions.hs) ✓ | 081   | 091   |
+| [001](./001-multiples-of-3-and-5.hs) ✓ | [011](./011-largest-product-in-a-grid.hs) ✓ | [021](./021-amicable-numbers.hs) ✓ | [031](./031-coin-sums.hs) ✓ | [041](./041-pandigital-prime.hs) ✓ | 051   | [061](./061-cyclical-figurate-numbers.hs) ✓ | [071](./071-ordered-fractions.hs) ✓ | 081   | 091   |
 | [002](./002-even-fibonacci-numbers.hs) ✓ | [012](./012-highly-divisible-triangular-number.hs) ✓ | [022](./022-names-scores.hs) ✓ | [032](./032-pandigital-products.hs) ✓ | [042](./042-coded-triangle-numbers.hs) ✓ | [052](./052-permuted-multiples.hs) ✓ | 062   | 072   | 082   | [092](./092-square-digit-chains.hs) ✓ |
 | [003](./003-largest-prime-factor.hs) ✓ | [013](./013-large-sum.hs) ✓ | [023](./023-non-abundant-sums.hs) ✓ | [033](./033-digit-cancelling-fractions.hs) ✓ | [043](./043-sub-string-divisibility.hs) ✓ | [053](./053-combinatoric-selections.hs) ✓ | [063](./063-powerful-digit-counts.hs) ✓ | 073   | 083   | 093   |
 | [004](./004-largest-palindrome-product.hs) ✓ | [014](./014-longest-collatz-sequence.hs) ✓ | [024](./024-lexicographic-permutations.hs) ✓ | [034](./034-digit-factorials.hs) ✓ | [044](./044-pentagon-numbers.hs) ✓ | [054](./054-poker-hands.hs) ✓ | 064   | [074](./074-digit-factorial-chains.hs) ✓ | 084   | 094   |
